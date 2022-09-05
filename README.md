@@ -3,3 +3,6 @@ A C# library for commonly used functions, this is mostly for my own personal usa
 
 # Class's:
 * fstream
+* net
+* toastWindow
+* winConsole
