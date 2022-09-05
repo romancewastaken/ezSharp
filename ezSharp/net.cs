@@ -18,7 +18,7 @@ namespace ezSharp
             }
         }
 
-        public string readString(string link)
+        public static string readString(string link)
         {
             try
             {
