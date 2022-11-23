@@ -6,6 +6,7 @@ namespace ezSharp
 {
     public class fstream
     {
+        /// <param name="path">Path to folder/param>
         private static bool folderExists(string path)
         {
             try
@@ -28,6 +29,7 @@ namespace ezSharp
             }
         }
 
+        /// <param name="path">Path to file</param>
         public static bool fileExists(string path)
         {
             try
@@ -50,6 +52,7 @@ namespace ezSharp
             }
         }
 
+        /// <param name="path">Path to file</param>
         public static void openFile(string path)
         {
             try
@@ -71,6 +74,8 @@ namespace ezSharp
             }
         }
 
+        /// <param name="currentName">Current path</param>
+        /// <param name="newName">New path</param>
         public static void renameFile(string currentName, string newName)
         {
             try
@@ -86,11 +91,15 @@ namespace ezSharp
             }
         }
 
-        public static void writeFile(string path, string content)
+        /// <param name="path">Path to file</param>
+        /// <param name="name">Name of file</param>
+        ///<param name="type">Type of file extension</param>
+        /// <param name="content">Content of new file</param>
+        public static void writeFile(string path, string name, string type, string content)
         {
             if (!fileExists(path))
             {
-                File.WriteAllText(path, content);
+                File.WriteAllText(path + "/" + name + "." + type, content);
             }
         }
     }

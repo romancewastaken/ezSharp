@@ -11,7 +11,8 @@ namespace ezSharp
 
         public static extern bool AllocConsole();    //allocate console
 
-        //use this function when your application starts + when you want to update the console
+        /// <param name="title">Title of console</param>
+        /// /// <param name="message">Output of console</param>
         public static void Update(string title, string message)
         {
             try

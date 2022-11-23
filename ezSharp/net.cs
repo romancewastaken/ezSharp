@@ -5,6 +5,7 @@ namespace ezSharp
 {
     internal class net
     {
+        /// <param name="link">Direct link to download</param>
         public static void downloadFile(string link, string path)
         {
             try
@@ -18,6 +19,7 @@ namespace ezSharp
             }
         }
 
+        /// <param name="link">Link  to page to scrape</param>
         public static string readString(string link)
         {
             try
