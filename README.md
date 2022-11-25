@@ -1,5 +1,5 @@
 # ezSharp
-A C# library for commonly used functions, this is mostly for my own personal usage so I don't have to rewrite things.
+A C# library for commonly used functions to speed up your development. Say good bye to rewriting functions
 
 # Precompiled release
 You can find it [here](https://github.com/romancewastaken/ezSharp/releases)
