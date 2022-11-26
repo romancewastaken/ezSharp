@@ -10,3 +10,10 @@ You can find it [here](https://github.com/romancewastaken/ezSharp/releases)
 * net
 * toastWindow
 * winConsole
+
+
+## Bug report
+You can make a bug report [here](https://github.com/romancewastaken/ezSharp/issues)
+
+## Pull requests
+You can make a pull request [here](https://github.com/romancewastaken/ezSharp/pulls)
