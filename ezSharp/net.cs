@@ -8,7 +8,8 @@ namespace ezSharp
         public static WebClient client = new WebClient();
 
         /// <param name="link">Direct link to download</param>
-        //  <param name="fileName">Name to save the file as</param>
+        /// <param name="path">Where to save the file to</param>
+        ///  <param name="fileName">Name to save the file as</param>
         /// <param name="extensionType">Type of file</param>
         public static void downloadFile(string link, string path, string fileName, string extensionType)
         {
