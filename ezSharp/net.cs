@@ -3,19 +3,22 @@ using System.Net;
 
 namespace ezSharp
 {
-    internal class net
+    public class net
     {
+        public static WebClient client = new WebClient();
+
         /// <param name="link">Direct link to download</param>
-        public static void downloadFile(string link, string path)
+        //  <param name="fileName">Name to save the file as</param>
+        /// <param name="extensionType">Type of file</param>
+        public static void downloadFile(string link, string path, string fileName, string extensionType)
         {
             try
             {
-                WebClient client = new WebClient();
-                client.DownloadFileAsync(new Uri(link), path);
+                client.DownloadFileAsync(new Uri(link), path + $"/{fileName}.{extensionType}");
             }
             catch (Exception ex)
             {
-                Console.Write(ex.Message);
+                Console.WriteLine(ex.Message);
             }
         }
 
@@ -24,7 +27,6 @@ namespace ezSharp
         {
             try
             {
-                WebClient client = new WebClient();
                 return client.DownloadString(link);
             }
             catch (Exception ex)
